@@ -1,13 +1,18 @@
 package com.example.instagramclone;
 
+
 import android.app.Application;
 
 import com.parse.Parse;
+import com.parse.ParseObject;
 
 public class ParseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        // Register your parse models
+        ParseObject.registerSubclass(Post.class);
+
         Parse.initialize(new Parse.Configuration.Builder(this)
                 .applicationId("jMAXadq1YCxyIiHpnI18sJSwBOxx8N0nPT2Gtyqm")
                 .clientKey("uJIvni0Da2uPMAuzSImStaQ4kNJy62FYXqh4m4rC")
