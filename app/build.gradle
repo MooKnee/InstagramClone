@@ -1,6 +1,10 @@
 plugins {
     id 'com.android.application'
 }
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
+def apikeyProperties = new Properties()
+apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
 
 android {
     compileSdk 32
@@ -13,6 +17,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // should correspond to key/value pairs inside the file
+        buildConfigField("String", "APP_ID", apikeyProperties['APP_ID'])
+        buildConfigField("String", "CLIENT_KEY", apikeyProperties['CLIENT_KEY'])
     }
 
     buildTypes {
