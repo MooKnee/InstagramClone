@@ -9,9 +9,9 @@ Time spent: **15** hours spent in total
 The following **required** functionality is completed:
 
 - [x] User can sign up to create a new account using Parse authentication.
-- [ ] User can log in and log out of his or her account.
+- [x] User can log in and log out of his or her account.
 - [x] The current signed in user is persisted across app restarts.
-- [ ] User can take a photo, add a caption, and post it to "Instagram".
+- [x] User can take a photo, add a caption, and post it to "Instagram".
 
 The following **optional** features are implemented:
 
@@ -27,8 +27,8 @@ The following **additional** features are implemented:
 
 
 Here's a walkthrough of implemented user stories:
-
-<img src=unit5gif.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
+https://github.com/MooKnee/InstagramClone/blob/master/unit5intaclone-2022-03-04_17_15_49.gif
+<img src=unit5intaclone-2022-03-04_17_15_49.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
