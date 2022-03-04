@@ -25,8 +25,9 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-![](https://github.com/MooKnee/InstagramClone/blob/master/unit5gif.gif)
-https://github.com/MooKnee/InstagramClone/blob/master/unit5gif.gif
+![unit5gif](https://user-images.githubusercontent.com/42590833/156704254-e3bb4961-fc2c-4ef8-b078-1102a5e06484.gif)
+
+
 
 Here's a walkthrough of implemented user stories:
 
