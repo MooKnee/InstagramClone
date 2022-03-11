@@ -35,29 +35,29 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     public static final String TAG = "MainActivity";
-    public static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 5;
-    private EditText etDescription;
-    private Button btnCaptureImage;
-    private Button btnSignOut;
-    private ImageView ivPostImage;
-    private Button btnSubmit;
+    //public static final int CAPTURE_IMAGE_ACTIVITY_REQUEST_CODE = 5;
+    //private EditText etDescription;
+    //private Button btnCaptureImage;
+    //private Button btnSignOut;
+    //private ImageView ivPostImage;
+    //private Button btnSubmit;
     private BottomNavigationView bottomNavigationView;
-    private File photoFile;
-    private String photoFileName = "photo.jpg";
+    //private File photoFile;
+    //private String photoFileName = "photo.jpg";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        etDescription = findViewById(R.id.etDescription);
-        btnCaptureImage = findViewById(R.id.btnCaptureImage);
-        ivPostImage = findViewById(R.id.ivPostImage);
-        btnSubmit = findViewById(R.id.btnSubmit);
-        btnSignOut = findViewById(R.id.btnSignOut);
+        //etDescription = findViewById(R.id.etDescription);
+        //btnCaptureImage = findViewById(R.id.btnCaptureImage);
+        //ivPostImage = findViewById(R.id.ivPostImage);
+        //btnSubmit = findViewById(R.id.btnSubmit);
+        //btnSignOut = findViewById(R.id.btnSignOut);
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        btnCaptureImage.setOnClickListener(new View.OnClickListener() {
+        /*btnCaptureImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 launchCamera();
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 savePost(description, currentUser, photoFile);
                 Toast.makeText(MainActivity.this, "Post Submitted", Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
         //noinspection deprecation
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -103,22 +103,22 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-        btnSignOut.setOnClickListener(new View.OnClickListener() {
+/*        btnSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ParseUser.logOut();
                 goLoginActivity();
                 Toast.makeText(MainActivity.this, "Successfully logged out!", Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
     }
 
-    private void goLoginActivity() {
+/*    private void goLoginActivity() {
         Intent i = new Intent(this, LoginActivity.class);
         startActivity(i);
         finish();
-    }
-
+    }*/
+/*
     private void launchCamera() {
         // create Intent to take a picture and return control to the calling application
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -210,5 +210,5 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-    }
+    }*/
 }
