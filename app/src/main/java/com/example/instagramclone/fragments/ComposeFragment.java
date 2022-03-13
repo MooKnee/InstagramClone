@@ -238,7 +238,7 @@ public class ComposeFragment extends Fragment {
         });
     }
 
-    private void queryPosts() {
+    /*private void queryPosts() {
         ParseQuery<Post> query = ParseQuery.getQuery(Post.class);
         query.include(Post.KEY_USER);
         query.findInBackground(new FindCallback<Post>() {
@@ -253,7 +253,7 @@ public class ComposeFragment extends Fragment {
                 }
             }
         });
-    }
+    }*/
     private void goLoginActivity() {
         //Intent i = new Intent(this, LoginActivity.class);
         Intent i = new Intent(getContext(), LoginActivity.class);
